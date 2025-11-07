@@ -16,7 +16,7 @@ const redButton = {
 ///////////
 
 const buttonInfo = {
-    text: 'Text'
+    text: 'Buy this'
 }
 const buttonStyle = {
     color: 'yellow',
