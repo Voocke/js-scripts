@@ -7,8 +7,14 @@ class Comment {
     upvote() {
         this.votesQty++
     }
+
+    static mergeComments(first, second) {
+        return `${first} ${second}`
+    }
 }
 
 const firstComment = new Comment('First comment')
 firstComment.upvote()
 console.log(firstComment)
+const str = Comment.mergeComments('First comment.', 'Second comment.')
+console.log(str)
