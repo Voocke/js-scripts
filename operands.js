@@ -7,7 +7,7 @@ const button = {
     width: 200,
     text: 'Buy'
 }
-
+//...nameOfObject - присваивание объекту свойства другого объекта
 const redButton = {
     ...button, //всегда в начале если хотим переприсвоить
     color: 'red'
@@ -27,6 +27,8 @@ const newButton = {
     ...button,
     ...buttonInfo,
     ...buttonStyle,
+    //дальнейшее изменение полей внутри этого объекта не будет
+    //мутировать поля в копируемых классах если у них нет вложенных объектов
 }
 
 console.table(redButton)
